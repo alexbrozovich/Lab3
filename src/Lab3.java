@@ -12,11 +12,14 @@ public class Lab3 {
 		int userInt = scan.nextInt();
 		
 		//print header
-		System.out.println("Number ------ Square ------ Cube");
+		String head1 = "Number";
+		String head2 = "Square";
+		String head3 = "Cube";
+		System.out.printf("%s %10s %10s%n", head1, head2, head3);
 		
 		//for loop until i == userInteger
 		for (int i = 1; i <= userInt; i++) {
-			System.out.printf("%d        %d        %d %n", i, (i*i), (i*i*i));
+			System.out.printf("%d %13d %11d%n", i, (i*i), (i*i*i));
 		}
 		
 		//wrap the whole thing in a loop to ask to continue
